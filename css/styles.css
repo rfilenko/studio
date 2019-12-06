@@ -52,6 +52,23 @@ scroll-container {
   overflow-y: scroll;
   scroll-behavior: smooth;
 }
+.nav-fixed {
+  position: fixed;
+  left: 0;
+  top: 0;
+  padding: 0.5rem 1.5rem;
+  width: 100%;
+  z-index: 10;
+  background: wheat;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  border-bottom: 2px dashed var(--primary);
+}
+.nav-fixed a {
+  font-size: 1.5rem;
+  letter-spacing: -2px;
+  text-shadow: 3px 3px 1px rgba(247, 96, 14, 0.5);
+}
 
 /* first section */
 #first {
