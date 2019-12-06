@@ -12,6 +12,7 @@ const handleScroll = () => {
 };
 arrow.addEventListener("click", () => {
   handleScroll();
+  arrowUp.classList.remove("hidden");
 });
 
 // scroll up
@@ -19,14 +20,14 @@ const arrowUp = document.querySelector(".arrow-up");
 
 //show arrowUp on navLink click
 const navLinks = document.querySelectorAll("nav a");
-navLinks.forEach((el) => {
-    el.addEventListener("click", () => {
-        arrowUp.classList.remove("hidden");
-      });
+navLinks.forEach(el => {
+  el.addEventListener("click", () => {
+    arrowUp.classList.remove("hidden");
+  });
 });
 arrowUp.addEventListener("click", () => {
   document
     .getElementById("first")
     .scrollIntoView({ behavior: "smooth", block: "start" });
-    arrowUp.classList.add('hidden')
+  arrowUp.classList.add("hidden");
 });
