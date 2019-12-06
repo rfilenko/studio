@@ -95,11 +95,11 @@
     margin-bottom: 1em;
     margin-top: 2.5em;
     border: none;
-    -webkit-transition: all .25s ease;
-    -moz-transition: all .25s ease;
-    -o-transition: all .25s ease;
-    -ms-transition: all .25s ease;
-    transition: all .25s ease;
+    -webkit-transition: all .2s ease-in;
+    -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -ms-transition: all .2s ease-in;
+    transition: all .2s ease-in;
 }
 .team .card-img-top {
    filter: grayscale(100%);
@@ -107,20 +107,26 @@
     -moz-filter: grayscale(100%);
     -ms-filter: grayscale(100%); 
     -o-filter: grayscale(100%);
-}
-.team .card-img-top:hover { 
-    filter: none;
-    border-bottom: 3px solid #f7600e;
+    -webkit-transition: all .2s ease-in;
+    -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -ms-transition: all .2s ease-in;
+    transition: all .2s ease-in;
 }
 .card:hover {
     cursor: pointer;
-    -webkit-transform:scale(1.10);
-    -moz-transform:scale(1.10); 
-    -ms-transform:scale(1.10); 
-    -o-transform:scale(1.10); 
-     transform:scale(1.10);
 }
-
+.card:hover .card-img-top { 
+    filter: none;
+    -webkit-transform:scale(1.05, 1.05);
+    -moz-transform:scale(1.05, 1.05); 
+    -ms-transform:scale(1.05, 1.05); 
+    -o-transform:scale(1.05, 1.05); 
+     transform:scale(1.05, 1.05);
+}
+.card:hover .card-title {
+    color: #f7600e;
+}
 
 @media (max-width: 576px) {
     #third  .col-sm-6 {
